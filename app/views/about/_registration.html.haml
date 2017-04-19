@@ -24,7 +24,7 @@
   .actions
     = f.button :button, t('about.get_started'), type: :submit
 
-  .info
+  .info{style: 'padding-top:0;'}
     = link_to t('auth.login'), new_user_session_path, class: 'webapp-btn'
     ·
     = link_to t('about.about_this'), about_more_path
