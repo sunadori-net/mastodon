@@ -15,10 +15,8 @@
   %meta{ property: 'twitter:card', content: 'summary' }/
 
 .wrapper
-  %h1
-    = image_tag 'logo.png'
-    = Setting.site_title
-    %p{style: 'width:300px; text-align:center;'} by: robotstart.info
+  %div{style: 'text-align:center;'}
+    = image_tag 'lobodon_logo.png'
 
   %p= t('about.about_mastodon').html_safe
 
