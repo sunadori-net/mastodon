@@ -35,10 +35,10 @@
   %p{style: 'font-weight:bold;'}
     お問い合わせ
 
-  %p
+  %p{style: 'margin:0;padding:0;'}
     info@robotstart.co.jp宛に、メールにてお問い合わせください。
 
-  %p{style: 'font-size:.9em;'}
+  %p{style: 'margin:0;padding:0;font-size:.9em;'}
     ※返信をお約束するものではありません。ご了承ください。
 
   .screenshot-with-signup
@@ -91,10 +91,7 @@
           = fa_icon('li check-square')
           = t 'about.features.api'
 
-  - unless @instance_presenter.site_description.blank?
-    %h3= t('about.description_headline', domain: site_hostname)
-    %p= @instance_presenter.site_description.html_safe
-
+  %h3= Mastodonとは
   %p= t('about.about_mastodon').html_safe
 
   .actions
