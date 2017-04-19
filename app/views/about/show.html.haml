@@ -23,7 +23,7 @@
 
   %p{style: 'font-weight:bold;'}
     ルール
-    
+
   %ul
     %li<>
       各国の法律及び、日本国内の法律を厳守してください。
@@ -32,7 +32,14 @@
     %li<>
       AIやBOTによる自動投稿などもOKですが、他人に迷惑がかかったり、サーバーに負荷のかかるご利用方法はおやめください。
 
-  %p= t('about.about_mastodon').html_safe
+  %p{style: 'font-weight:bold;'}
+    お問い合わせ
+
+  %p
+    info@robotstart.co.jp宛に、メールにてお問い合わせください。
+
+  %p{style: 'font-size:.9em;'}
+    ※返信をお約束するものではありません。ご了承ください。
 
   .screenshot-with-signup
     .mascot= image_tag 'robosta-robot.png'
@@ -87,6 +94,8 @@
   - unless @instance_presenter.site_description.blank?
     %h3= t('about.description_headline', domain: site_hostname)
     %p= @instance_presenter.site_description.html_safe
+
+  %p= t('about.about_mastodon').html_safe
 
   .actions
     .info
