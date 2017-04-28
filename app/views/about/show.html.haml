@@ -15,16 +15,16 @@
   %meta{ property: 'twitter:card', content: 'summary' }/
 
 .wrapper
-  %div{style: 'text-align:center;'}
-    = image_tag 'lobodon_logo.png', width: 450, style: 'display:block;margin:0 auto 40px;max-width:100%;'
+  %div
+    = image_tag 'lobodon_logo.png', class: 'robodon-logo'
   %p
     ロボット情報WEBマガジン「ロボスタ」が運営するインスタンスです。
     ロボット、AI、IoT、ドローンなどの話題を中心としていますが、上記に限らず、好きな内容を話していただいて大丈夫です。
 
-  %h3{style: 'margin-top:20px; margin-bottom:10px;'}
+  %h3
     ルール
 
-  %ul{style: 'margin-bottom:10px;'}
+  %ul
     %li<>
       各国の法律及び、日本国内の法律を厳守してください。
     %li<>
@@ -87,24 +87,24 @@
 
   %p= t('about.about_mastodon').html_safe
 
-  %h3{style: 'margin-top:20px; margin-bottom:10px;'}
+  %h3
     運用について
 
-  %p{style: 'margin:0;padding:0;'}
+  %p
     本インスタンスの運用は、ロボットスタート株式会社が行います。
     データーの保証や継続しての運営をお約束するものではありませんので予めご了承ください。
 
-  %h3{style: 'margin-top:20px; margin-bottom:10px;'}
+  %h3
     お問い合わせ
 
-  %p{style: 'margin:0;padding:0;'}
+  %p
     info@robotstart.co.jp宛に、メールにてお問い合わせください。
 
-  %p{style: 'margin:0;margin-bottom:20px;padding:0;font-size:.9em;'}
+  %p.caution
     ※返信をお約束するものではありません。ご了承ください。
 
-  .actions{style: 'text-align:center;'}
-    .info{style: 'text-align:center; display:inline; float:none;'}
+  .actions
+    .info
       = link_to t('about.terms'), terms_path
       ·
       = link_to t('about.apps'), 'https://github.com/tootsuite/documentation/blob/master/Using-Mastodon/Apps.md'
@@ -113,6 +113,6 @@
       ·
       = link_to t('about.other_instances'), 'https://github.com/tootsuite/documentation/blob/master/Using-Mastodon/List-of-Mastodon-instances.md'
 
-  %div{style: 'text-align:center; margin-top:14px;'}
+  %div
     %a{ href: "https://robotstart.info/", title: "ロボット情報WEBマガジン - ロボスタ" }
-      = image_tag 'robosta_logo.svg', width: '100px'
+      = image_tag 'robosta_logo.svg', class: 'robosta-logo'

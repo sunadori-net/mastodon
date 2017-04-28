@@ -1,0 +1,35 @@
+.about-body {
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+  .robodon-logo {
+    display: block;
+    width: 450px;
+    margin: 0 auto 40px;
+  }
+  .screenshot-with-signup {
+    margin-top: 16px;
+  }
+  .actions {
+    text-align: center;
+  }
+  .robosta-logo {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 14px;
+  }
+  .actions {
+    .info {
+      float: none;
+      text-align: center;
+    }
+  }
+  .caution {
+    font-size: .9em;
+  }
+}
